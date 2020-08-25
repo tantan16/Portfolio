@@ -1,0 +1,474 @@
+*  {
+    margin: 0px;
+    } 
+
+/*Inicia el estilo del header*/
+header{
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #Ffffff;
+}
+    .menu-nav{
+        justify-content: flex-end;
+        display: flex;
+        width: 100%;
+        Box-shadow: 0 0 29px 0 rgba(10, 10, 10, 0.25); 
+    }    
+
+        .lista-navegacion{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;  
+        }
+
+        /*estilo del menú de hamburguesa*/
+        .menu-hamburguesa{
+            display:none;
+        }
+        /*fin del estilo del menú de hamburguesa*/
+
+        .elemento-menu{
+        display: flex;
+        font-size: 18px;
+        font-family: 'Varela', sans-serif;
+        margin:30px;
+        padding: 8px;
+        }
+
+            .vinc-contacto{
+            background-color: #F76463;
+            color: white;
+            border-radius: 100px;
+            }
+
+                .vinc-contacto:hover, .boton:hover{
+                    background-color: #91ffec;
+                    color: white;
+                }
+
+/*Termina el estilo del header*/
+
+/*Inicia esección mi info*/
+
+     .seccion-mi-info{
+     background-color: #Ffffff;
+     display: flex;
+     flex-wrap: wrap;
+     margin-left:60px;
+     margin-right:60px;
+     justify-content: flex-start;
+    }
+    
+    .mi-info{
+     padding-top: 50px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     text-align: left;
+     margin-left: 100px;
+    }
+
+    .saludo, .nombre{
+    font-weight: 1000px;   
+    }
+    
+    .saludo{
+    font-family:'Montserrat', sans-serif;
+    color:black;
+    font-size: 40px;
+    margin: 5px;
+    }
+
+    .nombre{
+     color: #F76463;
+     font-family: 'Satisfy', cursive;
+     font-size: 90px;
+     }
+
+
+    .quien-soy{
+    color:#8f8f8f;
+    font-family: 'Varela', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    }
+
+    .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F76463;
+    color: white;
+    padding:20px;
+    border-radius: 100px;
+    font-weight: 800px;
+    }
+
+    a {
+     text-decoration: none;
+     color: black;
+    }
+
+    a:visited{
+        color: black;
+    }
+    
+    .contenedor-imagen-yo{
+        display: flex;
+        height: 520px;
+        width: 520px;
+    }
+
+        .yo{
+            width:100%;
+            height: auto;
+        }
+/*ITemina sección que habla de mi*/
+
+/*Inicia sección de conocimientos*/
+ .seccion-conocimientos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:#F9D8D2;
+    }
+
+    .parrafo-conocimientos{
+    color: black;
+    font-family: 'Varela', sans-serif;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+    /*inicia listado de conocimientos*/
+    .habilidad-contenedor-principal{
+        display: flex;
+        justify-content: center;
+        width:100%;
+        max-width: 900px;
+        flex-wrap: wrap;
+    }
+
+        .contenedor{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 200px;
+        margin: 15px;
+        background-color:  #F76463;
+        border: 3px solid #ee7766;
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        }
+
+         .icono, .habilidad-txt{
+         text-align: center;
+         font-size: 100px;
+         color: #fafafa;
+         padding-top: 20px;
+         }
+
+         .habilidad-txt{
+            font-size: 30px;
+            font-family: 'Varela', sans-serif;
+         }
+/*Termina sección de habilidades*/
+         
+/*Inicia sección de frase motivadora*/
+ .frase-motiv{
+     width: 100%;
+     display: flex;
+     background-color:#fafafa;
+ }
+
+    .contenedor-frase{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        background-color:#fafafa;
+        padding-top:100px;
+    }
+
+     .fa-quote-right{
+         font-size: 80px;
+         text-align: center;
+         color: #F76463;
+         padding-bottom: 30px;
+     }
+
+     .frase-texto{
+        font-family: 'Varela', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        color:  #F76463;
+     }
+
+     .autor-frase{
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 600px;
+        color: #F76463;
+        padding-top: 15px;
+     }
+/*Termina sección de frase motivadora*/
+
+ /*Inicia sección de proyectos*/
+.proyectos{
+    width:100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titulo-proyectos{
+    padding-top:100px;
+    padding-bottom: 25px
+}
+
+.barra-proyectos{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 50px;
+    background-color: #Ffffff;
+    box-shadow: none;
+}
+
+    .boton2{
+      background-color: #F76463;
+      color: white;
+      text-decoration:none;
+      font-size: 18px;
+      font-family: 'Varela', sans-serif;
+      border: none;
+      width: 120px;
+    }
+
+.contenedor-proyectos{
+   height: auto;
+   width: 60vw;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: #Ffffff;
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 150px;
+    }
+
+    article{
+        height: 250px;
+        width: 250px;
+        background-color: #Ffffff;
+        border: 2px solid grey;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+        .img-proy{
+            padding-top:35px;
+            padding-left:30px;
+            height: 150px;
+            width: 180px;
+        }
+
+        .texto-proy{
+            font-family: 'Varela', sans-serif;
+            font-size: 20px;
+            color:#F76463 ;
+            text-align: center;
+        }
+/*Ifinaliza sección de proyectos*/
+
+
+/*Inicia sección de footer*/
+footer{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#F76463;  
+}
+    /* inicia el menu-footer*/
+    .menu-footer{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        background-color: #F76463;
+    }
+
+    .foot{
+        box-shadow: none;
+        align-items: center;
+        justify-content: center;
+    }
+    /*termina el menu-footer*/
+
+    /*inicia sección de redes sociales de contacto del footer*/
+    
+    .barra-redes{
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+        .redes-contacto{
+            display: flex;
+            padding-top:30px;
+        }
+
+            .foot-img{
+                font-size: 50px;
+                color: white;
+            }
+    
+    /*este es el pie del footer*/
+    .p-footer{
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+        font-size: 30px;
+        color: white;
+    }
+/*Fin de sección de footer*/
+
+/*Inicia media query*/
+@media(max-width:600px){
+/*media query para los elementos del header*/
+    *{
+        max-width: 600px;
+    }
+
+    .menu-nav{
+        height: 30px;
+        width: 100%;
+        background-color: #Ffffff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .head{
+        display: none;
+        }
+
+        .menu-hamburguesa{
+        height: 30px;
+        color:#F76463 ; 
+        display:flex;
+        font-size:30px;
+        }
+/*media query para la sección sobre mi*/
+      #hola, #misproy{
+         justify-content: center;
+         margin-left: 0;
+         padding: 0;
+      }
+  
+/*media query para sección de mis conocimientos*/
+    .seccion-conocimientos{
+        flex-wrap: wrap;
+    }
+
+    .habilidad-txt{
+        padding-top: 5px;
+    }
+
+/*media query con consideraciones aplicables a varias partes del portfolio*/
+    
+     .head, .saludo, 
+    .quien-soy, .autor-frase, 
+    .titulo, .p-footer, .barra-proyectos{
+        font-size: 20px;
+        font-family: Montserrat;
+    }
+
+    .parrafo-conocimientos, .frase-texto,.boton,
+     .boton2, .texto-proy, .habilidad-txt,.elemento-menu{
+        font-family: 'Varela', sans-serif;
+        font-size:18px;
+     }
+     .contenedor{
+         height: 100px;
+         width: 100px;
+     }
+
+     .icono{
+         font-size: 80px;
+         padding:5px;
+         margin: none;
+     }
+
+/*media query de la sección de proyectos*/
+     .barra-proyectos{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .titulo-proyectos{
+        padding-left: 50px;
+        /*Tuve que dar este padding en la media query porque no se ajustaba*/
+    }
+
+    /*media query del footer*/
+    .footer{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+        .foot{
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding-top:10px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .elemento-menu{
+           margin:0;
+        }
+
+        .footer-men{
+            font-size: 12px;
+        }
+
+        .barra-redes{
+            padding-top:80px;
+            padding-bottom: 5px;
+        }
+        .p-footer{
+            font-family: 'Satisfy', cursive;
+            padding-left:30px;
+        }
+
+        .foot-img{
+            font-size: 50px;
+        }
+}
+/*termina la media query*/

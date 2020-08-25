@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Righteous&family=Satisfy&family=Varela&display=swap"
+        rel="stylesheet">
+    <!--link de íconos utilizados-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu-nav">
+            <!--inicia menú de navegación-->
+            <ul class="lista-navegacion">
+                <!--menú hamburguesa-->
+                <div class="menu-hamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!--Pa ra el menú de hamburguesa
+            no pude colocarlo en el nav porque no me aparecía en el 
+            media query, al colocarlo acá si se mostró-->
+                <li class="elemento-menu head">
+                    <a href="#hola">HOLA</a>
+                </li>
+                <li class="elemento-menu head">
+                    <a href="#habilidades">MIS CONOCIMIENTOS</a>
+                </li>
+                <li class="elemento-menu head">
+                    <a href="#misproy">PROYECTOS</a>
+                </li>
+                <li class="elemento-menu vinc-contacto head">
+                    <a href="">CONTACTO</a>
+                </li>
+                <!--Termina el menú de navegación-->
+            </ul>
+        </nav>
+    </header>
+    <!--termina el header-->
+
+    <!-- inicia la sección mi info-->
+    <section class="seccion-mi-info" id="hola">
+        <div class="mi-info">
+            <p class="saludo">¡Hola! Soy</p>
+            <h1 class="nombre"> Tania Eva</h1>
+            <p class="quien-soy"> Mujer, todóloga, mamá de Diego y programadora en formación</p>
+            <a href="#misproy" class="boton"> LO QUE HAGO</a>
+        </div>
+        <div class="contenedor-imagen-yo">
+            <img  class="yo" src="imagenes/yo.svg" >
+        </div>
+    </section>
+    <!--Finaliza la sección mi info-->
+
+    <!--Inicia sección mis conocimientos-->
+    <section class="seccion-conocimientos" id="habilidades">
+        <div class="contenedor-conocimientos">
+            <h1 class="saludo titulo">Mis conocimientos</h1>
+        <p class="parrafo-conocimientos"> Esto es lo que he aprendido en esta cursada gracias a todo el equipo de Ada y
+            mis compañeras de clase
+        </p>
+        </div>
+        
+        <!--listado de habilidades -->
+        <div class="habilidad-contenedor-principal">
+
+            <div class="contenedor">
+                <i class=" icono devicon-html5-plain"></i>
+                <p class="habilidad-txt"> HTML 5</p>
+            </div>
+
+            <div class="contenedor habilidad">
+                <i class=" icono devicon-css3-plain"></i>
+                <p class="habilidad-txt"> CSS 3</P>
+            </div>
+
+            <div class="contenedor habilidad">
+                <i class=" icono devicon-sass-original"></i>
+                <p class="habilidad-txt"> SASS </P>
+            </div>
+
+            <div class="contenedor habilidad">
+                <i class=" icono devicon-javascript-plain"></i>
+                <p class="habilidad-txt">JS</p>
+            </div>
+
+            <div class="contenedor habilidad">
+                <i class="icono devicon-react-original"></i>
+                <p class="habilidad-txt"> REACT</p>
+            </div>
+
+            <div class="contenedor habilidad">
+                <i class=" icono devicon-git-plain"></i>
+                <p class="habilidad-txt">GIT</p>
+            </div>
+
+        </div>
+            <!--fin del listado de habilidades p2--> 
+    </section>
+    <!--termina la sección de conocimientos-->
+
+    <!--inicia la sección con frase -->
+    <section class="frase-motiv">
+        <div class="contenedor-frase">
+            <i class="fas fa-quote-right"></i>
+            <p class="frase-texto">“There is no future. There is no past. Do you see? Time is simultaneous, an
+                intricately structured jewel
+                that humans insist on viewing one edge at a time, when the whole design is visible in every facet.” </p>
+            <H2 class="autor-frase"> Allan Moore, Watchmen</H2>
+        </div>
+    </section>
+    <!--finaliza la sección con frase-->
+
+    <!--inicia la sección de proyectos-->
+    <section class="proyectos" id="misproy">
+        <h1 class="saludo titulo-proyectos">Mis proyectos</h1>
+        </div>
+        <!-- inicia el menu de proyectos-->
+        <div class="barra-proyectos">
+            <ul class="lista-navegacion barra-proyectos">
+                <li class="elemento-menu vinc-contacto">
+                    <button class="boton2">Todos</button>
+                </li>
+                <li class="elemento-menu">HTML/CSS</li>
+                <li class="elemento-menu">JavaScript</li>
+                <li class="elemento-menu">React</li>
+            </ul>
+        </div>
+        <!--finaliza el menú de proyectos-->
+
+        <!--inicia la grilla de proyectos-->
+        <div class="contenedor-proyectos">
+            <article class="caja-proyecto">
+                <img src="./imagenes/yo_2.png" class="img-proy">
+                <p class="texto-proy"> Portfolio</p>
+            </article>
+            <article class="caja-proyecto">
+                <img src="./imagenes/tienda.png" class="img-proy">
+                <p class="texto-proy"> Tienda</p>
+            </article>
+            <article class="caja-proyecto">
+                <img src="./imagenes/juego.png" class="img-proy">
+                <p class="texto-proy"> Juego de la memoria</p>
+            </article>
+            <article class="caja-proyecto">
+                <img src="./imagenes/wallet.png" class="img-proy">
+                <p class="texto-proy"> Controlador de gastos</p>
+            </article>
+            <article class="caja-proyecto">
+                <img src="./imagenes/calendar.png" class="img-proy">
+                <p class="texto-proy"> Administrador de reuniones</p>
+            </article>
+            <article class="caja-proyecto">
+                <img src="./imagenes/app.png" class="img-proy">
+                <p class="texto-proy"> Todo app</p>
+            </article>
+            <article class="caja-proyecto">
+                <img src="./imagenes/movies.png" class="img-proy">
+                <p class="texto-proy"> Buscador de películas</p>
+            </article>
+        </div>
+        <!--termina la grilla de proyectos-->
+    </section>
+    <!--inicia footer-->
+    <footer>
+        <!--inicia menú del footer-->
+        <div class="menu-footer">
+            <ul class="lista-navegacion foot">
+                <li class="elemento-menu footer-men">
+                    <a href="#hola">HOLA</a>
+                </li>
+
+                <li class="elemento-menu footer-men">
+                    <a href="#habilidades">CONOCIMIENTOS</a>
+                </li>
+
+                <li class="elemento-menu footer-men">
+                    <a href="#misproy">PROYECTOS</a>
+                </li>
+
+                <li class="elemento-menu footer-men">
+                    <a href="">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+            <!--termina menu del footer-->
+
+         <!--inicia sección de redes sociales de contacto del footer-->
+       
+        <div class="barra-redes">
+            <ul class="redes-contacto">
+                <li class="elemento-menu redes-men">
+                    <a href="https://github.com/tantan16">
+                     <i class="devicon-github-plain-wordmark colored foot-img"></i>
+                    </a>
+             </li>
+
+             <li class="elemento-menu redes-men">
+                <a href="https://www.facebook.com/tannya.valensi">
+                    <i class="devicon-facebook-plain foot-img"></i>
+                </a>
+            </li>
+
+            <li class="elemento-menu">
+                <a href="https://www.instagram.com/tannyamoretti/">
+                    <i class="fab fa-instagram fa-3x icon-insta foot-img"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+        <!--finaliza sección de contacto del footer-->
+        <!--este es el pie del footer-->
+        <p class="p-footer">
+            Hecho con
+            <i class="fab fa-gratipay"></i>
+            por Tania Eva
+        </p>
+    </footer>
+    <!--termina footer-->
+</body>
+
+</html>
