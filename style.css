@@ -6,6 +6,8 @@
 header{
     display:flex;
     justify-content: flex-end;
+    /* no es necesario aclarar width 100%, ya que eso lo tienen los lementos en bloque por defecto. 
+    El color de fondo tampoco, ya que se hereda del body*/
     width: 100%;
     background-color: #Ffffff;
 }
@@ -13,6 +15,7 @@ header{
         justify-content: flex-end;
         display: flex;
         width: 100%;
+        /* Atencion al uso de mayusculas:en css escribimos todo en minusculas*/
         Box-shadow: 0 0 29px 0 rgba(10, 10, 10, 0.25); 
     }    
 
@@ -22,6 +25,9 @@ header{
         flex-wrap: wrap;  
         }
 
+        /* Arriba utilizaste tres veces justify-content: flex-end. Solo uno de ellos es necesario.  */
+
+
         /*estilo del menú de hamburguesa*/
         .menu-hamburguesa{
             display:none;
@@ -29,6 +35,7 @@ header{
         /*fin del estilo del menú de hamburguesa*/
 
         .elemento-menu{
+            /* no es necesario flex aqui */
         display: flex;
         font-size: 18px;
         font-family: 'Varela', sans-serif;
@@ -52,29 +59,35 @@ header{
 /*Inicia esección mi info*/
 
      .seccion-mi-info{
+         /* no es necesario el color de fondo blanco, ya que es el que viene por defecto */
      background-color: #Ffffff;
      display: flex;
      flex-wrap: wrap;
      margin-left:60px;
      margin-right:60px;
+     /* quiza quedaria mejor tu web en algunas resoluciones si cambiamos esto por justify-content: center */
      justify-content: flex-start;
     }
     
     .mi-info{
+        /* el padding no seria necesario si a .seccion-mi-info le hubieramos dicho align-items: center */
      padding-top: 50px;
      display: flex;
      flex-direction: column;
      align-items: flex-start;
+     /* no es necesario text align left, es lo que viene por defecto */
      text-align: left;
      margin-left: 100px;
     }
 
+    /* font weight se pone sin px, y su maximo es 900. Asi: font-weight: 900; */
     .saludo, .nombre{
     font-weight: 1000px;   
     }
     
     .saludo{
     font-family:'Montserrat', sans-serif;
+    /* No es necesario poner color black aqui ya que es el color por defecto */
     color:black;
     font-size: 40px;
     margin: 5px;
@@ -129,6 +142,8 @@ header{
 
 /*Inicia sección de conocimientos*/
  .seccion-conocimientos{
+
+    /* no es necesario width 100% */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -184,8 +199,12 @@ header{
          
 /*Inicia sección de frase motivadora*/
  .frase-motiv{
+
+    /* no es necesario width 100% aqui, ni display flex */
      width: 100%;
      display: flex;
+
+     /* gracias por esto! */
      background-color:#fafafa;
  }
 
@@ -194,6 +213,8 @@ header{
         flex-direction: column;
         align-items: center;
         height: 400px;
+
+        /* no es necesario repetir el background color, ya que se lo da su contenedor */
         background-color:#fafafa;
         padding-top:100px;
     }
@@ -201,6 +222,9 @@ header{
      .fa-quote-right{
          font-size: 80px;
          text-align: center;
+
+         /* El color de texto se hereda: si se lo das a .frase-motiv, por ejemplo, no es necesario repetirlo
+         tres veces en los distintos elementos hijos.  */
          color: #F76463;
          padding-bottom: 30px;
      }
@@ -215,6 +239,7 @@ header{
      .autor-frase{
         font-family: Montserrat;
         font-size: 30px;
+        /* recorda que font weight no va con px */
         font-weight: 600px;
         color: #F76463;
         padding-top: 15px;
@@ -223,10 +248,12 @@ header{
 
  /*Inicia sección de proyectos*/
 .proyectos{
+    /* ni width ni height son necesarios aqui, ya que estas son las medidas que se ponen por defecto */
     width:100%;
     height: 100%;
     flex-direction: column;
     display: flex;
+    /* no es necesario justify-content: flex start ya que es el valor por defecto */
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
@@ -240,8 +267,13 @@ header{
 .barra-proyectos{
     justify-content: center;
     align-items: center;
+
+    /* aqui tuviste que poner un margin bottom porque le diste un height. Si borras ambos, 
+    tu barra se veria igual - y el codigo estaria mejor.  */
     margin-bottom: 50px;
     height: 50px;
+
+    /* no es necesario background color ni box shadow none: ambos estan por defecto asi */
     background-color: #Ffffff;
     box-shadow: none;
 }
@@ -259,9 +291,12 @@ header{
 .contenedor-proyectos{
    height: auto;
    width: 60vw;
+
+   /* no es necesario flex direction row, ya que se pone por defecto */
    flex-direction: row;
    justify-content: center;
    align-items: center;
+   /* no es necesario background-color */
    background-color: #Ffffff;
    display: flex;
    flex-wrap: wrap;
@@ -271,6 +306,7 @@ header{
     article{
         height: 250px;
         width: 250px;
+        /* no es necesario background-color aqui */
         background-color: #Ffffff;
         border: 2px solid grey;
         border-radius: 10px;
@@ -297,6 +333,9 @@ header{
 
 /*Inicia sección de footer*/
 footer{
+
+    /* no es buena practica darle height a las cosas, ya que queremos que se acomoden a 
+    lo que les dice su contenido. tampoco es necesario width 100% */
     height: 300px;
     width: 100%;
     display: flex;
@@ -315,6 +354,7 @@ footer{
     }
 
     .foot{
+        /* no es necesario box shadow none */
         box-shadow: none;
         align-items: center;
         justify-content: center;
