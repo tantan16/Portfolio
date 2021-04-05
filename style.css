@@ -5,108 +5,99 @@
 /*Inicia el estilo del header*/
 header{
     display:flex;
-    justify-content: flex-end;
-    /* no es necesario aclarar width 100%, ya que eso lo tienen los lementos en bloque por defecto. 
-    El color de fondo tampoco, ya que se hereda del body*/
-    width: 100%;
-    background-color: #Ffffff;
+    background: #F9D8D2;
 }
-    .menu-nav{
-        justify-content: flex-end;
-        display: flex;
-        width: 100%;
-        /* Atencion al uso de mayusculas:en css escribimos todo en minusculas*/
-        Box-shadow: 0 0 29px 0 rgba(10, 10, 10, 0.25); 
+.menu-nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-shadow: 0 0 29px 0 rgba(10, 10, 10, 0.25); 
     }    
-
-        .lista-navegacion{
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;  
+    
+.lista-navegacion{
+    display: flex;
+    flex-wrap: wrap;  
         }
 
-        /* Arriba utilizaste tres veces justify-content: flex-end. Solo uno de ellos es necesario.  */
-
-
-        /*estilo del menú de hamburguesa*/
-        .menu-hamburguesa{
-            display:none;
+/*estilo del menú de hamburguesa*/
+ .menu-hamburguesa{
+    display:none;
         }
-        /*fin del estilo del menú de hamburguesa*/
+/*fin del estilo del menú de hamburguesa*/
 
-        .elemento-menu{
-            /* no es necesario flex aqui */
-        display: flex;
-        font-size: 18px;
-        font-family: 'Varela', sans-serif;
-        margin:30px;
-        padding: 8px;
-        }
+/*Inicia el estilo de la lista que compone al nav*/
+ .elemento-menu{
+list-style: none;
+font-size: 18px;
+font-family: 'Varela', sans-serif;
+margin:30px;
+padding: 8px;
+opacity: 0.6;
+transition: 0.3s;
+}
+.elemento-menu:hover{
+opacity: 1;
+font-size: 22px;
+font-weight: 600;
+}
 
-            .vinc-contacto{
-            background-color: #F76463;
-            color: white;
-            border-radius: 100px;
-            }
-
-                .vinc-contacto:hover, .boton:hover{
-                    background-color: #91ffec;
-                    color: white;
-                }
-
+/*Estilo del botón de contacto que está en el nav*/
+.vinc-contacto{
+background-color: #F76463;
+color: white;
+border-radius: 100px;
+}
+.vinc-contacto:hover, .boton:hover{
+color: white;
+transform: scale(1.2);
+}
 /*Termina el estilo del header*/
 
 /*Inicia esección mi info*/
 
-     .seccion-mi-info{
-         /* no es necesario el color de fondo blanco, ya que es el que viene por defecto */
-     background-color: #Ffffff;
-     display: flex;
-     flex-wrap: wrap;
-     margin-left:60px;
-     margin-right:60px;
-     /* quiza quedaria mejor tu web en algunas resoluciones si cambiamos esto por justify-content: center */
-     justify-content: flex-start;
-    }
+.contenedor-principal{
+display: flex;
+flex-direction: row;
+padding: 15px;
+}
+
+.seccion-mi-info{
+display: flex;
+flex-wrap: wrap;
+flex-grow: 1;
+margin-left:60px;
+margin-right:60px;
+justify-content: center;
+}
+.mi-info{
+display: flex;
+flex-direction: column;
+align-self: center;
+align-items: flex-start;
+}
+
+.saludo, .nombre{
+font-weight: 900;   
+}
     
-    .mi-info{
-        /* el padding no seria necesario si a .seccion-mi-info le hubieramos dicho align-items: center */
-     padding-top: 50px;
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     /* no es necesario text align left, es lo que viene por defecto */
-     text-align: left;
-     margin-left: 100px;
-    }
+.saludo{
+font-family:'Montserrat', sans-serif;
+font-size: 60px;
+margin: 5px;
+}
+.nombre{
+color: #F76463;
+font-family: 'Satisfy', cursive;
+font-size: 160px;
+}
 
-    /* font weight se pone sin px, y su maximo es 900. Asi: font-weight: 900; */
-    .saludo, .nombre{
-    font-weight: 1000px;   
-    }
-    
-    .saludo{
-    font-family:'Montserrat', sans-serif;
-    /* No es necesario poner color black aqui ya que es el color por defecto */
-    color:black;
-    font-size: 40px;
-    margin: 5px;
-    }
-
-    .nombre{
-     color: #F76463;
-     font-family: 'Satisfy', cursive;
-     font-size: 90px;
-     }
-
-
-    .quien-soy{
-    color:#8f8f8f;
-    font-family: 'Varela', sans-serif;
-    font-size: 20px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    }
+.quien-soy{
+color:#8f8f8f;
+font-family: 'Varela', sans-serif;
+font-size: 20px;
+margin-bottom: 40px;
+margin-top: 20px;
+}
 
     .boton{
     display: flex;
@@ -199,11 +190,6 @@ header{
          
 /*Inicia sección de frase motivadora*/
  .frase-motiv{
-
-    /* no es necesario width 100% aqui, ni display flex */
-     width: 100%;
-     display: flex;
-
      /* gracias por esto! */
      background-color:#fafafa;
  }
