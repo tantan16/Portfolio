@@ -98,44 +98,39 @@ font-size: 20px;
 margin-bottom: 40px;
 margin-top: 20px;
 }
+.boton{
+ display: flex;
+justify-content: center;
+align-items: center;
+background-color: #F76463;
+color: white;
+padding:20px;
+border-radius: 100px;
+font-weight: 800px;
+}
 
-    .boton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F76463;
-    color: white;
-    padding:20px;
-    border-radius: 100px;
-    font-weight: 800px;
-    }
+a{
+text-decoration: none;
+color: black;
+}
 
-    a {
-     text-decoration: none;
-     color: black;
-    }
+a:visited{
+color: black;
+}
 
-    a:visited{
-        color: black;
-    }
-    
-    .contenedor-imagen-yo{
-        display: flex;
-        height: 520px;
-        width: 520px;
-    }
-
-        .yo{
-            width:100%;
-            height: auto;
-        }
-/*ITemina sección que habla de mi*/
+.contenedor-imagen-yo{
+display: flex;
+justify-content: center;
+flex-grow: 2;
+}
+.yo{
+width:auto;
+height: auto;
+}
+/*Termina sección que habla de mi*/
 
 /*Inicia sección de conocimientos*/
  .seccion-conocimientos{
-
-    /* no es necesario width 100% */
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,49 +138,47 @@ margin-top: 20px;
     padding-top: 100px;
     padding-bottom: 100px;
     background-color:#F9D8D2;
-    }
+}
+.parrafo-conocimientos{
+color: black;
+font-family: 'Varela', sans-serif;
+font-size: 25px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
 
-    .parrafo-conocimientos{
-    color: black;
-    font-family: 'Varela', sans-serif;
-    font-size: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    }
+ /*inicia listado de conocimientos*/
+.habilidad-contenedor-principal{
+display: flex;
+justify-content: center;
+width:100%;
+max-width: 900px;
+flex-wrap: wrap;
+}
+.contenedor{
+display: flex;
+flex-direction: column;
+height: 200px;
+width: 200px;
+margin: 15px;
+background-color:  #F76463;
+border: 3px solid #ee7766;
+border-radius: 20px;
+padding: 30px;
+text-align: center;
+}
 
-    /*inicia listado de conocimientos*/
-    .habilidad-contenedor-principal{
-        display: flex;
-        justify-content: center;
-        width:100%;
-        max-width: 900px;
-        flex-wrap: wrap;
-    }
-
-        .contenedor{
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        width: 200px;
-        margin: 15px;
-        background-color:  #F76463;
-        border: 3px solid #ee7766;
-        border-radius: 20px;
-        padding: 30px;
-        text-align: center;
-        }
-
-         .icono, .habilidad-txt{
-         text-align: center;
-         font-size: 100px;
-         color: #fafafa;
-         padding-top: 20px;
+.icono, .habilidad-txt{
+text-align: center;
+font-size: 100px;
+color: #fafafa;
+padding-top: 20px;
          }
 
-         .habilidad-txt{
-            font-size: 30px;
-            font-family: 'Varela', sans-serif;
-         }
+.habilidad-txt{
+font-size: 30px;
+font-family: 'Varela', sans-serif;
+}
 /*Termina sección de habilidades*/
          
 /*Inicia sección de frase motivadora*/
