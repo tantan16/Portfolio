@@ -1,29 +1,29 @@
 *  {
-    margin: 0px;
-    } 
+margin: 0px;
+} 
 
 /*Inicia el estilo del header*/
 header{
-    display:flex;
-    background: #F9D8D2;
+display:flex;
+background: #F9D8D2;
 }
 .nav-menu{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    box-shadow: 0 0 29px 0 rgba(10, 10, 10, 0.25); 
-    }    
+display: flex;
+justify-content: flex-end;
+width: 100%;
+box-shadow: 0 0 29px 0 rgba(10, 10, 10, 0.25); 
+}    
     
 .nav-list{
-    display: flex;
-    flex-wrap: wrap;  
-        }
+display: flex;
+flex-wrap: wrap;  
+}
 
- .ham-menu{
-    display:none;
-        }
+.ham-menu{
+display:none;
+}
 
- .menu-item{
+.menu-item{
 list-style: none;
 font-size: 18px;
 font-family: 'Varela', sans-serif;
@@ -54,22 +54,20 @@ transform: scale(1.2);
 .main-container{
 display: flex;
 flex-direction: row;
-padding: 15px;
 }
 
 .info-section{
 display: flex;
 flex-wrap: wrap;
-flex-grow: 1;
-margin-left:60px;
-margin-right:60px;
-justify-content: center;
+align-items: center;
 }
 .personal-info{
 display: flex;
+justify-content: center;
+align-items: center;
 flex-direction: column;
-align-self: center;
-align-items: flex-start;
+flex-grow: 1;
+padding-left: 30px;
 }
 
 .greeting, .name{
@@ -79,7 +77,7 @@ font-weight: 900;
 .greeting{
 font-family:'Montserrat', sans-serif;
 font-size: 60px;
-margin: 5px;
+margin-top: 35px;
 }
 .name{
 color: #F76463;
@@ -87,7 +85,7 @@ font-family: 'Satisfy', cursive;
 font-size: 160px;
 }
 
-.quien-soy{
+.my-description{
 color:#8f8f8f;
 font-family: 'Varela', sans-serif;
 font-size: 20px;
@@ -107,28 +105,32 @@ a:visited{
 color: black;
 }
 
-.contenedor-imagen-yo{
+.my-image{
 display: flex;
+flex-direction: column;
 justify-content: center;
+align-items: center;
 flex-grow: 2;
 }
-.yo{
-width:auto;
-height: auto;
+
+.me{
+width:80%;
+height: 80%;
 }
 /*Termina sección que habla de mi*/
 
 /*Inicia sección de conocimientos*/
- .seccion-conocimientos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color:#F9D8D2;
+.knowledge-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding-top: 100px;
+padding-bottom: 100px;
+background-color:#F9D8D2;
 }
-.parrafo-conocimientos{
+
+.knowledge-paragraph{
 color: black;
 font-family: 'Varela', sans-serif;
 font-size: 25px;
@@ -137,88 +139,75 @@ padding-bottom: 10px;
 }
 
  /*inicia listado de conocimientos*/
-.habilidad-contenedor-principal{
+.maincontainer-skill{
 display: flex;
 justify-content: center;
 width:100%;
 max-width: 900px;
 flex-wrap: wrap;
 }
-.contenedor{
+.container{
 display: flex;
 flex-direction: column;
 height: 200px;
 width: 200px;
 margin: 15px;
 background-color:  #F76463;
-border: 3px solid #ee7766;
+border: 3px solid #fafafa;
 border-radius: 20px;
 padding: 30px;
 text-align: center;
 }
 
-.icono, .habilidad-txt{
+.icon, .skill-txt{
 text-align: center;
 font-size: 100px;
 color: #fafafa;
 padding-top: 20px;
          }
 
-.habilidad-txt{
+.skill-txt{
 font-size: 30px;
 font-family: 'Varela', sans-serif;
 }
 /*Termina sección de habilidades*/
          
 /*Inicia sección de frase motivadora*/
- .frase-motiv{
-     /* gracias por esto! */
-     background-color:#fafafa;
+.motiv-quote{
+background-color:#fafafa;
+color: #F76463;
  }
 
-    .contenedor-frase{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 400px;
+.phrase-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 400px;
+padding-top:100px;
+}
 
-        /* no es necesario repetir el background color, ya que se lo da su contenedor */
-        background-color:#fafafa;
-        padding-top:100px;
-    }
+.fa-quote-right{
+font-size: 80px;
+text-align: center;
+padding-bottom: 30px;
+}
 
-     .fa-quote-right{
-         font-size: 80px;
-         text-align: center;
+.text-phrase{
+font-family: 'Varela', sans-serif;
+font-size: 25px;
+text-align: center;
+}
 
-         /* El color de texto se hereda: si se lo das a .frase-motiv, por ejemplo, no es necesario repetirlo
-         tres veces en los distintos elementos hijos.  */
-         color: #F76463;
-         padding-bottom: 30px;
-     }
-
-     .frase-texto{
-        font-family: 'Varela', sans-serif;
-        font-size: 25px;
-        text-align: center;
-        color:  #F76463;
-     }
-
-     .autor-frase{
-        font-family: Montserrat;
-        font-size: 30px;
-        /* recorda que font weight no va con px */
-        font-weight: 600px;
-        color: #F76463;
-        padding-top: 15px;
-     }
+.author-phrase{
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 600;
+padding-top: 15px;
+}
 /*Termina sección de frase motivadora*/
 
  /*Inicia sección de proyectos*/
-.proyectos{
-    /* ni width ni height son necesarios aqui, ya que estas son las medidas que se ponen por defecto */
-    width:100%;
-    height: 100%;
+.projects{
     flex-direction: column;
     display: flex;
     /* no es necesario justify-content: flex start ya que es el valor por defecto */
@@ -227,136 +216,153 @@ font-family: 'Varela', sans-serif;
     flex-wrap: wrap;
 }
 
-.titulo-proyectos{
+.project-header{
     padding-top:100px;
     padding-bottom: 25px
 }
 
-.barra-proyectos{
-    justify-content: center;
-    align-items: center;
-
-    /* aqui tuviste que poner un margin bottom porque le diste un height. Si borras ambos, 
-    tu barra se veria igual - y el codigo estaria mejor.  */
-    margin-bottom: 50px;
-    height: 50px;
-
-    /* no es necesario background color ni box shadow none: ambos estan por defecto asi */
-    background-color: #Ffffff;
-    box-shadow: none;
+.project-nav{
+justify-content: center;
+align-items: center;
 }
 
-    .boton2{
-      background-color: #F76463;
-      color: white;
-      text-decoration:none;
-      font-size: 18px;
-      font-family: 'Varela', sans-serif;
-      border: none;
-      width: 120px;
-    }
+.button-2{
+background-color:    #F76463;
+border-radius: 50px;
+color: white;
+text-decoration:none;
+font-size: 18px;
+font-family: 'Varela', sans-serif;
+border: none;
+width: 120px;
+}
 
-.contenedor-proyectos{
-   height: auto;
-   width: 60vw;
+.container-projects-section{
+box-sizing: border-box;
+height: auto;
+width: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding-bottom: 150px;
+}
 
-   /* no es necesario flex direction row, ya que se pone por defecto */
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   /* no es necesario background-color */
-   background-color: #Ffffff;
-   display: flex;
-   flex-wrap: wrap;
-   padding-bottom: 150px;
-    }
+article{
+height: 250px;
+width: 250px;
+border: 2px solid grey;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+margin: 15px;
+padding-bottom: 5px;
+justify-content: center;
+align-items: center;
+} 
 
-    article{
-        height: 250px;
-        width: 250px;
-        /* no es necesario background-color aqui */
-        background-color: #Ffffff;
-        border: 2px solid grey;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        margin: 15px;
-    }
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow:2;
+    overflow: hidden;
+}
 
-        .img-proy{
-            padding-top:35px;
-            padding-left:30px;
-            height: 150px;
-            width: 180px;
-        }
+.proj-img{
+    height: 70%;
+}
 
-        .texto-proy{
-            font-family: 'Varela', sans-serif;
-            font-size: 20px;
-            color:#F76463 ;
-            text-align: center;
-        }
-/*Ifinaliza sección de proyectos*/
+.p-container{
+    flex-grow: 1;
+}
+
+
+
+.project-text{
+font-family: 'Varela', sans-serif;
+font-size: 20px;
+padding-top: 10px;
+color:#F76463 ;
+text-align: center;
+}
+/*Finaliza sección de proyectos*/
+
+/*Inicia sección de formulario de contacto*/
+.contact-section{
+    display: flex;
+    background-color:#F2F2F2;
+    width: 100%;
+    height: 500px;
+}
+
+.contact-me, .write-to-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+
 
 
 /*Inicia sección de footer*/
 footer{
-
-    /* no es buena practica darle height a las cosas, ya que queremos que se acomoden a 
-    lo que les dice su contenido. tampoco es necesario width 100% */
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:#F76463;  
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color:#F76463;  
 }
-    /* inicia el menu-footer*/
-    .menu-footer{
-        width: 100%;
-        height: 40px;
-        display: flex;
-        flex-direction: column;
-        padding-top: 50px;
-        background-color: #F76463;
-    }
+/* inicia el menu-footer*/
+.footer-menu{
+width: 100%;
+height: 40px;
+display: flex;
+flex-direction: column;
+padding-top: 50px;
+background-color: #F76463;
+color: #fafafa;
+}
 
-    .foot{
-        /* no es necesario box shadow none */
-        box-shadow: none;
-        align-items: center;
-        justify-content: center;
-    }
-    /*termina el menu-footer*/
+.foot{
+align-items: center;
+justify-content: center;
+}
+/*termina el menu-footer*/
 
-    /*inicia sección de redes sociales de contacto del footer*/
-    
-    .barra-redes{
-        max-width: 600px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-        .redes-contacto{
-            display: flex;
-            padding-top:30px;
-        }
+/*inicia sección de redes sociales de contacto del footer*/ 
+.socialnet-nav{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 100px;
+}
 
-            .foot-img{
-                font-size: 50px;
-                color: white;
-            }
-    
-    /*este es el pie del footer*/
-    .p-footer{
-        text-align: center;
-        font-family: 'Satisfy', cursive;
-        font-size: 30px;
-        color: white;
-    }
+.socialnet-link{
+display: flex;
+padding-top:30px;
+}
+
+.foot-img{
+font-size: 50px;
+color: white;
+}
+/*este es el pie del footer*/
+
+.created-by{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+.p-footer{
+font-family: 'Satisfy', cursive;
+font-size: 30px;
+color: white;
+}
 /*Fin de sección de footer*/
 
 /*Inicia media query*/

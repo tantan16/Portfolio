@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link  rel="icon"   href="favicon.ico"/>
+    
 </head>
 
 <body>
@@ -26,16 +27,16 @@
                 </div>
 
                 <li class="menu-item head">
-                    <a href="#hola">HOLA</a>
+                    <a href="#greeting">HOLA</a>
                 </li>
                 <li class="menu-item head">
-                    <a href="#habilidades">MIS CONOCIMIENTOS</a>
+                    <a href="#skills">MIS CONOCIMIENTOS</a>
                 </li>
                 <li class="menu-item head">
-                    <a href="#misproy">PROYECTOS</a>
+                    <a href="#projects">PROYECTOS</a>
                 </li>
                 <li class="menu-item contact-button head">
-                    <a href="">CONTACTO</a>
+                    <a href="contact-item">CONTACTO</a>
                 </li>
             </ul>
         </nav>
@@ -44,65 +45,62 @@
 
     <!-- inicia la sección mi info-->
 <section class="main-container">
-    <section class="info-section" id="hola">
+
+    <section class="info-section" id="greeting">
         <div class="personal-info">
             <p class="greeting">¡Hola! Soy</p>
             <h1 class="name"> Tania Eva</h1>
-            <p class="quien-soy"> Mujer, soñadora, mamá de Diego y futura front-end developer</p>
-
-            <!-- Este boton es muy similar, sino igual, al de "Contacto". Habria sido recomendable que les des 
-            a ambos la misma clase, para reutilizar el estilo.  -->
-            <a href="#misproy" class="contact-button ocuppation"> LO QUE HAGO</a>
+            <p class="my-description"> Futura desarrolladora front :)</p>
+            <a href="#projects" class="contact-button ocuppation"> LO QUE HAGO</a>
         </div>
-        <div class="contenedor-imagen-yo">
-            <img  class="yo" src="C:\Users\leono\OneDrive\Documentos\GitHub\My_first_portfolio\imagenes\yo_2.svg" >
+        <div class="my-image">
+            <img  class="me" src="/assets/images/yo_2.svg" >
         </div>
     </section>
 </section>
-    <!--Finaliza la sección mi info-->
 
     <!--Inicia sección mis conocimientos-->
-    <section class="seccion-conocimientos" id="habilidades">
-        <div class="contenedor-conocimientos">
-            <h1 class="saludo titulo">Mis conocimientos</h1>
-        <p class="parrafo-conocimientos"> Esto es lo que he aprendido en esta cursada gracias a todo el equipo de Ada y
+    <section class="knowledge-section" id="skills">
+        <div>
+            <h1 class="greeting" id="skills">Mis conocimientos</h1>
+        <p class="knowledge-paragraph"> Esto es lo que he aprendido en esta cursada gracias a todo el equipo de Ada y
             mis compañeras de clase
         </p>
         </div>
         
         <!--listado de habilidades -->
-        <div class="habilidad-contenedor-principal">
+        <div class="maincontainer-skill">
 
             <!-- Todas tus tarjetas, salvo la primera, tienen la clase "habilidad", pero por lo que veo en CSS
             no la estas usando. Deberias borrarla si no se usa.  -->
-            <div class="contenedor">
-                <i class=" icono devicon-html5-plain"></i>
-                <p class="habilidad-txt"> HTML 5</p>
+            <div class="container">
+                <i class=" icon devicon-html5-plain"></i>
+                <p class="skill-txt"> HTML 5</p>
             </div>
 
-            <div class="contenedor habilidad">
-                <i class=" icono devicon-css3-plain"></i>
-                <p class="habilidad-txt"> CSS 3</P>
+            <div class="container">
+                <i class=" icon devicon-css3-plain"></i>
+                <p class="skill-txt"> CSS 3</P>
             </div>
 
-            <div class="contenedor habilidad">
-                <i class=" icono devicon-sass-original"></i>
-                <p class="habilidad-txt"> SASS </P>
+            <div class="container">
+                <i class=" icon devicon-sass-original"></i>
+                <p class="skill-txt"> SASS </P>
             </div>
 
-            <div class="contenedor habilidad">
-                <i class=" icono devicon-javascript-plain"></i>
-                <p class="habilidad-txt">JS</p>
+            <div class="container">
+                <i class=" icon devicon-javascript-plain"></i>
+                <p class="skill-txt">JS</p>
             </div>
 
-            <div class="contenedor habilidad">
-                <i class="icono devicon-react-original"></i>
-                <p class="habilidad-txt"> REACT</p>
+            <div class="container">
+                <i class="icon devicon-react-original"></i>
+                <p class="skill-txt"> REACT</p>
             </div>
 
-            <div class="contenedor habilidad">
-                <i class=" icono devicon-git-plain"></i>
-                <p class="habilidad-txt">GIT</p>
+            <div class="container">
+                <i class="icon devicon-git-plain"></i>
+                <p class="skill-txt">GIT</p>
             </div>
 
         </div>
@@ -111,85 +109,132 @@
     <!--termina la sección de conocimientos-->
 
     <!--inicia la sección con frase -->
-    <section class="frase-motiv">
-        <div class="contenedor-frase">
+    <section class="motiv-quote">
+        <div class="phrase-container">
             <i class="fas fa-quote-right"></i>
-            <p class="frase-texto">“There is no future. There is no past. Do you see? Time is simultaneous, an
+            <p class="text-phrase">“There is no future. There is no past. Do you see? Time is simultaneous, an
                 intricately structured jewel
                 that humans insist on viewing one edge at a time, when the whole design is visible in every facet.” </p>
-            <H2 class="autor-frase"> Allan Moore, Watchmen</H2>
+            <h2 class="author-phrase"> Allan Moore, Watchmen</h2>
         </div>
     </section>
     <!--finaliza la sección con frase-->
-
     <!--inicia la sección de proyectos-->
-    <section class="proyectos" id="misproy">
-        <h1 class="saludo titulo-proyectos">Mis proyectos</h1>
+    <section class="projects" id="projects">
+        <h1 class="greeting projects-header">Mis proyectos</h1>
         </div>
         <!-- inicia el menu de proyectos-->
-        <div class="barra-proyectos">
-            <ul class="lista-navegacion barra-proyectos">
-                <li class="elemento-menu vinc-contacto">
-                    <button class="boton2">Todos</button>
+        <div class="project-nav">
+            <ul class="nav-list project-nav">
+                <li class="menu-item">
+                    <button class="button-2">Todos</button>
                 </li>
-                <li class="elemento-menu">HTML/CSS</li>
-                <li class="elemento-menu">JavaScript</li>
-                <li class="elemento-menu">React</li>
+                <li class="menu-item">HTML/CSS</li>
+                <li class="menu-item">JavaScript</li>
+                <li class="menu-item">React</li>
             </ul>
         </div>
         <!--finaliza el menú de proyectos-->
 
         <!--inicia la grilla de proyectos-->
-        <div class="contenedor-proyectos">
-            <article class="caja-proyecto">
-                <img src="./imagenes/yo_2.svg" class="img-proy">
-                <p class="texto-proy"> Portfolio</p>
+        <div class="container-projects-section">
+
+            <article class="box-project">
+                <div class="img-container">
+                    <img src="/assets/images/yo_2.svg" class="proj-img">
+                </div>
+                <div class="p-container">
+                    <p class="project-text"> Portfolio</p>
+                </div>
             </article>
-            <article class="caja-proyecto">
-                <img src="./imagenes/tienda.png" class="img-proy">
-                <p class="texto-proy"> Tienda</p>
+
+            <article class="box-project">
+                <div class="img-container">
+                    <img src="./assets/images/memes.png" class="proj-img">
+                </div>
+               <div class="p-container">
+                    <p class="project-text">Generador de memes</p>
+               </div>
+               
             </article>
-            <article class="caja-proyecto">
-                <img src="./imagenes/juego.png" class="img-proy">
-                <p class="texto-proy"> Juego de la memoria</p>
+
+            <article class="box-project">
+                <div class="img-container">
+                    <img src="./assets/images/match.png" class="proj-img">
+                </div>
+                <div class="p-container">
+                    <p class="project-text"> Match 3</p>
+                </div>
             </article>
-            <article class="caja-proyecto">
-                <img src="./imagenes/wallet.png" class="img-proy">
-                <p class="texto-proy"> Controlador de gastos</p>
+
+            <article class="box-project">
+                <div class="img-container">
+                    <img src="./assets/images/wallet.png" class="proj-img">
+                </div>
+                <div class="p-container">
+                    <p class="project-text"> Controlador de gastos</p>
+                </div>
             </article>
-            <article class="caja-proyecto">
-                <img src="./imagenes/calendar.png" class="img-proy">
-                <p class="texto-proy"> Administrador de reuniones</p>
+
+            <article class="box-project">
+                <div class="img-container">
+                    <img src="./assets/images/calendar.png" class="proj-img">
+                </div>
+                <div class="p-container">
+                    <p class="project-text"> Administrador de reuniones</p>
+                </div>
             </article>
-            <article class="caja-proyecto">
-                <img src="./imagenes/app.png" class="img-proy">
-                <p class="texto-proy"> Todo app</p>
+
+            <article class="box-project">
+                <div class="img-container">
+                    <img src="./assets/images/app.png" class="proj-img">
+                </div>
+                <div class="p-container">
+                    <p class="project-text"> Todo app</p>
+                </div>
             </article>
-            <article class="caja-proyecto">
-                <img src="./imagenes/movies.png" class="img-proy">
-                <p class="texto-proy"> Buscador de películas</p>
+
+            <article class="box-project">
+                <div class="img-container">
+                    <img src="./assets/images/movies.png" class="proj-img movies">
+                </div>
+               <div class="p-container">
+                    <p class="project-text"> Buscador de películas</p>
+               </div>
             </article>
         </div>
         <!--termina la grilla de proyectos-->
     </section>
+
+    <!--Inicia sección de formulario de contacto-->
+
+    <div class="contact-section">
+        <div class="contact-me">
+            
+        </div>
+
+        <div class="write-to-me">
+            
+        </div>
+    </div>
     <!--inicia footer-->
     <footer>
         <!--inicia menú del footer-->
-        <div class="menu-footer">
-            <ul class="lista-navegacion foot">
-                <li class="elemento-menu footer-men">
+        <div class="footer-menu">
+            <ul class="nav-list foot">
+                <li class="menu-item footer-men">
                     <a href="#hola">HOLA</a>
                 </li>
 
-                <li class="elemento-menu footer-men">
+                <li class="menu-item footer-men">
                     <a href="#habilidades">CONOCIMIENTOS</a>
                 </li>
 
-                <li class="elemento-menu footer-men">
+                <li class="menu-item footer-men">
                     <a href="#misproy">PROYECTOS</a>
                 </li>
 
-                <li class="elemento-menu footer-men">
+                <li class="menu-item footer-men">
                     <a href="">CONTACTO</a>
                 </li>
             </ul>
@@ -198,34 +243,43 @@
 
          <!--inicia sección de redes sociales de contacto del footer-->
        
-        <div class="barra-redes">
-            <ul class="redes-contacto">
-                <li class="elemento-menu redes-men">
+        <div class="socialnet-nav">
+            <ul class="socialnet-link">
+                <li class="menu-item redes-men">
                     <a href="https://github.com/tantan16">
                      <i class="devicon-github-plain-wordmark colored foot-img"></i>
                     </a>
              </li>
 
-             <li class="elemento-menu redes-men">
+             <li class="menu-item redes-men">
                 <a href="https://www.facebook.com/tannya.valensi">
                     <i class="devicon-facebook-plain foot-img"></i>
                 </a>
             </li>
 
-            <li class="elemento-menu">
+            <li class="menu-item">
                 <a href="https://www.instagram.com/tannyamoretti/">
                     <i class="fab fa-instagram fa-3x icon-insta foot-img"></i>
                 </a>
             </li>
+
+            <li class="menu-item">
+                <a href="https://www.linkedin.com/in/tania-elizalde-84a156b9">
+                    <i class="devicon-linkedin-plain foot-img"></i>
+            </li>
             </ul>
         </div>
         <!--finaliza sección de contacto del footer-->
+
         <!--este es el pie del footer-->
-        <p class="p-footer">
+        <div class="created-by"> 
+             <p class="p-footer">
             Hecho con
             <i class="fab fa-gratipay"></i>
             por Tania Eva
-        </p>
+            </p>
+        </div>
+      
     </footer>
     <!--termina footer-->
 </body>
