@@ -76,7 +76,7 @@ font-weight: 900;
     
 .greeting{
 font-family:'Montserrat', sans-serif;
-font-size: 60px;
+font-size: 50px;
 margin-top: 35px;
 }
 .name{
@@ -292,20 +292,65 @@ text-align: center;
 .contact-section{
     display: flex;
     background-color:#F2F2F2;
-    width: 100%;
-    height: 500px;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-me, .write-to-me{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 50%;
 }
 
+.contact-me-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
 
+.contact-text{
+   padding-top: 20px;
+   text-align: justify;
+   font-size: 18px;
+   font-family:'varela', sans-serif;
+}
 
+.social-media{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu-item-social-media{
+    list-style: none;
+    margin: 15px;
+    }
+
+.social-media-text:hover{
+    background-color:white;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: larger;
+    color: tomato;
+}
+
+.contact-icon{
+    font-size: 30px;
+    text-align: left;
+    color:#F76463 ;
+
+}
+.social-media-text{
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /*Inicia sección de footer*/
 footer{
